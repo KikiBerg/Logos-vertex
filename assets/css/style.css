@@ -8,13 +8,147 @@
     box-sizing: border-box;
 }
 
+/*General styles*/
 body {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    flex-grow: 1;      
+    background-color:  #fde0ba;  
+    font-family: 'Poppins', sans-serif;    
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: initial;
+    letter-spacing: 1.5px;
+    color: #451952;     
+}
+
+/*Header*/
+header {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    background: linear-gradient(45deg, #FFB4B4, #FDF7C3);  
+    padding: 1rem;   
+    z-index: 99;
+    width: 100%;
+    min-height: 50px;
+    box-shadow: 0 3px 3px #451952;
+    font-size: 25px;
+    color: #451952;
+    text-transform: initial;       
+    letter-spacing: 1.5px; 
+}
+
+/*Main content*/
+
+main { 
+      
+    /* Enable flex properties for child elements */
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     flex-grow: 1;
-    padding: 0 10px;
-    background: repeating-linear-gradient(135deg, #451952, #F39F5A);
+}
+
+
+/* --------- Game layout */
+.container-game-area{
+    display: flex;
+    flex-direction: column; /* Stack children vertically */ 
+    justify-content: space-between; /* Distribute space between children */
+    align-items: baseline;
+    padding: 40px;
+    list-style-type: none;
+    width: 850px;
+    gap: 70px;    
+    border: solid 1px #451952;   
+    border-radius: 50px;  
+        
+}
+
+/*about the game*/
+.about, .clue-text {
+    display: flex; 
+    flex-direction: raw; 
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 120%;
+    padding: 5px;    
+    list-style-type: none;   
+    text-align: center;
+    color: #451952;
+}
+
+
+
+
+
+/* --------- Buttons*/
+.buttons {  
+    display: flex; 
+    flex-direction: raw;
+    justify-content: space-between;
+    align-items: baseline;    
     
 }
+
+button {    
+    border: solid 1px  #451952;    
+    color: #451952;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttons button:active {
+    transform: scale(0.85);
+}
+
+.buttons #test-word, .buttons #refresh {
+    background: #FDF7C3;   
+    
+}
+
+.buttons #test-word:hover {
+    background: #d4d4d4;
+}
+
+.buttons #refresh:hover {
+    background: #8adf87;
+}
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB4B4;  
+    padding: 1rem;
+    width: 100%;
+    min-height: 20px;     
+    text-transform: initial;       
+    letter-spacing: 1.5px;    
+}
+
+.madeby {
+    display: flex;    
+    justify-content: center;
+    text-align: center;
+    padding: 3px 0;    
+    list-style-type: none;
+    color: #451952;
+}
+

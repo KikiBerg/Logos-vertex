@@ -1,59 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--title-->
-    <title>The logos vertex!</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Title-->
+        <title>The logos vertex!</title>
 
-    <!--favicon-->
-    
-    <!--stylesheet-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-</head>
+        <!--Favicon-->
 
-<body>
-    <header><h1 id="logo"><i class="fa-solid fa-braille"></i>The logos vertex</h1></header>
-    <main>
-        <!--what the game is about-->
-        <div class="about">
-            <h3>The Logos Vertex offers players a compelling journey into the realm of language.
-                It provides intellectual stimulation and enriches your vocabulary!</h3>
-            <h3>Use the alphabet below to guess the word or click refresh for a new word.</h3>
-        </div>
-    </main>
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-    <footer>
-        <h6>Developed by Kiki</h6>
-        <ul id="social-networks">
-            <li>
-                <a href="https://www.linkedin.com/in/angelikivlachou/" target="_blank" rel="noopener"
-                    aria-label="Connect in Linkedin (Opens in a new tab)">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/KikiBerg" target="_blank" rel="noopener"
-                    aria-label="Connect in Github (Opens in a new tab)">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <a href="mailto:angeliki_vl@outlook.com" target="_blank" rel="noopener"
-                    aria-label="Send me an email (Opens in a new tab)">
-                    <i class="fa-solid fa-at"></i>
-                </a>
-            </li>
-        </ul>
-    </footer>
-    
-    <!--javascript-->
-    <script src="assets/js/lexicon.js"></script>
-    <script src="assets/js/script.js"></script>
-    <!--font awesome kit-->
-    <script src="https://kit.fontawesome.com/984d18a8e2.js" crossorigin="anonymous"></script>
-</body>
+    </head>
+
+    <body>
+        <header>
+            <h1 id="logo">
+                <i class="fa-solid fa-braille"></i>The logos vertex</h1>
+        </header>
+        <main>
+            <!--Game layout -->
+            <div class="container-game-area">
+                <!--What the game is about-->
+                <div class="about">
+                    <h3>Join a journey into the realm of language.<br>
+                        Stimulate your intellect and enrich your vocabulary!<br>Use the alphabet below to guess the word or click refresh for a new word.</h3>
+                </div>
+
+                <!--Clue area-->
+                <div class="clue-text"><h4>Clue: <b></b></h4>
+                </div>
+
+                <!--Letters area-->
+                <div>
+                    <ul class="letters-display"></ul>
+                </div>
+
+                <!--Alphabet area-->
+                <div class="alphabet"></div>
+
+
+                <!--Buttons area-->
+                <div class="buttons">
+                    <button id="test-word">Test</button>
+                    <button id="refresh">Refresh</button>
+                </div>
+
+                <!--Chances left area-->
+                <div class="chances-text">Chances left: <b></b></div>
+
+
+
+            </div>
+
+
+        </main>
+
+
+        <!--Footer-->
+        <footer>
+            <div class="madeby">
+                <h3>Designed by Kiki</h3>
+            </div>
+        </footer>
+
+        <!--Javascript-->
+        <script src="assets/js/lexicon.js"></script>
+        <script src="assets/js/script.js"></script>
+        <!--Font awesome kit-->
+        <script src="https://kit.fontawesome.com/984d18a8e2.js" crossorigin="anonymous"></script>
+    </body>
 
 </html>
