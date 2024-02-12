@@ -11,11 +11,11 @@
 /*General styles*/
 body {
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    flex-grow: 1;      
+    min-height: 100vh;    
+    flex-grow: 1;
     background-color:  #fde0ba;  
     font-family: 'Poppins', sans-serif;    
 }
@@ -62,11 +62,11 @@ main {
     display: flex;
     flex-direction: column; /* Stack children vertically */ 
     justify-content: space-between; /* Distribute space between children */
-    align-items: baseline;
-    padding: 40px;
-    list-style-type: none;
-    width: 850px;
-    gap: 70px;    
+    /*align-items: baseline;*/
+    margin: 50px;
+    padding: 30px;
+    width: 900px;
+    gap: 40px;    
     border: solid 1px #451952;   
     border-radius: 50px;  
         
@@ -88,7 +88,40 @@ main {
 
 
 
+.clue-text {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
 
+/*The letters display*/
+
+.letters-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    list-style: none;
+    gap: 20px;
+}
+
+.letters-display .letters {
+    width: 30px;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px solid #451952;
+    margin-bottom: 30px;
+    color: #451952;
+
+}
+
+.letters-display .letters.chosen {
+    border-color: transparent;
+    margin: -40px 0 20px;
+
+}
 
 /* --------- Buttons*/
 .buttons {  
@@ -152,3 +185,6 @@ footer {
     color: #451952;
 }
 
+@media (max-width: 782px){ 
+
+}
