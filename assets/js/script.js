@@ -4,6 +4,7 @@ const alphabetDiv = document.querySelector('.alphabet');
 const gamePopup = document.querySelector('.game-pop-up');
 const tryAgainBtn = document.querySelector('.try-again')
 
+// Initialize game vars
 let presentWord, occuringLetters, wrongChancesCount;
 const maxChances = 5;
 
@@ -20,8 +21,7 @@ const restartGame = () => {
 const getRandomWord = () => {
     //Select random word and clue from wordList
     const { word, clue } = wordList [Math.floor(Math.random() * wordList.length )];
-    presentWord = word;
-    console.log(word);
+    presentWord = word;    
     document.querySelector('.clue-text b').innerText = clue;
     restartGame();
     
