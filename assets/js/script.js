@@ -1,6 +1,7 @@
 const lettersDisplay = document.querySelector('.letters-display');
 const chancesText = document.querySelector('.chances-text b');
 const alphabetDiv = document.querySelector('.alphabet');
+const gamePopup = document.querySelector('.game-pop-up');
 
 let presentWord, occuringLetters = [], wrongChancesCount = 0;
 const maxChances = 5;
@@ -14,6 +15,21 @@ const getRandomWord = () => {
     lettersDisplay.innerHTML = word.split('').map(()=>`<li class="letters"></li>`).join('');
 } 
 
+
+const gameOver = (isWin) => {
+    //Pop up window when winning or failing
+    setTimeout(() => {
+        const popupText = isWin ? `Awesome, you identified the word:` : `The right word was:`;
+        gamePopup.querySelector('img').src = `assets/images/${isWin ? 'win' : 'tryagain'}.jpg`;
+        gamePopup.querySelector('h4').innerText = isWin ? 'Excellent!' : 'Try again!';
+        gamePopup.querySelector('p').innerHTML = `${popupText} <b>${presentWord}</b>`;
+        gamePopup.classList.add('display');
+    }, 300);
+}
+
+
+
+//Initialise the game
 const initGame = (button, chosenLetter) => {
     //Check if the chosen letter occurs in the word
     if(presentWord.includes(chosenLetter)) {
