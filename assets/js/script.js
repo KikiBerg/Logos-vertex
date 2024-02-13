@@ -2,9 +2,20 @@ const lettersDisplay = document.querySelector('.letters-display');
 const chancesText = document.querySelector('.chances-text b');
 const alphabetDiv = document.querySelector('.alphabet');
 const gamePopup = document.querySelector('.game-pop-up');
+const tryAgainBtn = document.querySelector('.try-again')
 
-let presentWord, occuringLetters = [], wrongChancesCount = 0;
+let presentWord, occuringLetters, wrongChancesCount;
 const maxChances = 5;
+
+const restartGame = () => {
+    //Restarting the game vars
+    occuringLetters = [];
+    wrongChancesCount = 0;
+    chancesText.innerText = `${wrongChancesCount} / ${maxChances}`;
+    alphabetDiv.querySelectorAll('button').forEach(btn => btn.disabled = false);
+    lettersDisplay.innerHTML = presentWord.split('').map(()=>`<li class="letters"></li>`).join('');
+    gamePopup.classList.remove('display');
+}
 
 const getRandomWord = () => {
     //Select random word and clue from wordList
@@ -12,16 +23,17 @@ const getRandomWord = () => {
     presentWord = word;
     console.log(word);
     document.querySelector('.clue-text b').innerText = clue;
-    lettersDisplay.innerHTML = word.split('').map(()=>`<li class="letters"></li>`).join('');
+    restartGame();
+    
 } 
 
 
 const gameOver = (isWin) => {
-    //Pop up window when winning or failing
+    //Pop up window when winning or failing and respektive message poping
     setTimeout(() => {
         const popupText = isWin ? `Awesome, you identified the word:` : `The right word was:`;
         gamePopup.querySelector('img').src = `assets/images/${isWin ? 'win' : 'tryagain'}.jpg`;
-        gamePopup.querySelector('h4').innerText = isWin ? 'Excellent!' : 'Try again!';
+        gamePopup.querySelector('h4').innerText = isWin ? 'Hi 5!' : 'Try again!';
         gamePopup.querySelector('p').innerHTML = `${popupText} <b>${presentWord}</b>`;
         gamePopup.classList.add('display');
     }, 300);
@@ -66,3 +78,4 @@ for (let i = 97; i < 123; i++){
 }
 
 getRandomWord ();
+tryAgainBtn.addEventListener('click', getRandomWord);
