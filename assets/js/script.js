@@ -16,7 +16,14 @@ const getRandomWord = () => {
 const initGame = (button, chosenLetter) => {
     //Check if the chosen letter occurs in the word
     if(presentWord.includes(chosenLetter)) {
-        console.log (chosenLetter, 'Occurs in the word');
+        //Show the correct chosen letters
+        [...presentWord].forEach((letter, index) =>{
+            if(letter === chosenLetter) {
+                lettersDisplay.querySelectorAll('li')[index].innerText = letter;
+                lettersDisplay.querySelectorAll('li')[index].classList.add('chosen');
+            }
+
+        })
     } else {
         console.log (chosenLetter, 'Does not occur in the word');
     }
