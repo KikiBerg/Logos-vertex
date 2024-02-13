@@ -28,7 +28,7 @@ const wordList = [
         clue: "Universe regarded as an orderly system"
     }, {
         word:"democracy",
-        clue:"government system by and for the people"
+        clue:"Government system by and for the people"
     }, {
         word:"dialogue",
         clue:"Conversation between two or more people"
@@ -76,43 +76,43 @@ const wordList = [
         clue:"Seemingly contradictory statement or situation"
     }, {
         word:"idiom",
-        clue:"a group of words established by usage as having a meaning not deducible from those of the individual words"
+        clue:"A group of words established by usage as having a meaning not deducible from those of the individual words"
     }, {
         word:"hypothesis",
-        clue:"a proposed explanation for a phenomenon or a statement made on the basis of limited evidence as a starting point for further investigation"
+        clue:"Proposed explanation for a phenomenon or a statement made on the basis of limited evidence as a starting point for further investigation"
     }, {
         word:"grammar",
-        clue:"the set of structural rules for the composition of clauses, phrases, and words in any given natural language"
+        clue:"Set of structural rules for the composition of clauses, phrases, and words in any given natural language"
     }, {
         word:"genesis",
-        clue:"the origin or mode of formation of something"
+        clue:"The origin or mode of formation of something"
     }, {
         word:"exosphere",
-        clue:"the outermost layer of a planet's atmosphere, extending from the top of the thermosphere to the limit of the planet's gravitational influence"
+        clue:"The outermost layer of a planet's atmosphere, extending from the top of the thermosphere to the limit of the planet's gravitational influence"
     }, {
         word:"euphoria",
-        clue:"a feeling or state of intense excitement and happiness"
+        clue:"Feeling or state of intense excitement and happiness"
     }, {
         word:"economy",
-        clue:"the management of a household or organization, especially with regard to the careful and efficient use of resources"
+        clue:"The management of a household or organization, especially with regard to the careful and efficient use of resources"
     }, {
         word:"eclectic",
-        clue:"deriving ideas, style, or taste from a broad and diverse range of sources"
+        clue:"Deriving ideas, style, or taste from a broad and diverse range of sources"
     }, {
         word:"eccentric",
-        clue:"deviating from the customary character, unconventional or odd"
+        clue:"Deviating from the customary character, unconventional or odd"
     }, {
         word:"dichotomy",
-        clue:"a division or contrast between two things that are or are represented as being opposed or entirely different"
+        clue:"A division or contrast between two things that are or are represented as being opposed or entirely different"
     }, {
         word:"analysis",
-        clue:"the process of breaking a complex topic or substance into smaller parts to gain a better understanding"
+        clue:"The process of breaking a complex topic or substance into smaller parts to gain a better understanding"
     }, {
         word:"biology",
-        clue:"study of living organisms"
+        clue:"Study of living organisms"
     }, {
         word:"thesis",
-        clue:"statement put forward as a premise to be proved"
+        clue:"Statement put forward as a premise to be proved"
     }, {
         word:"technology",
         clue:"Application of scientific knowledge for practical purposes"
@@ -172,7 +172,7 @@ const wordList = [
         clue:"Study of fundamental questions concerning existence, knowledge, values, reason, mind, and language"
     }, {
         word:"pedagogy",
-        clue:" method, practice and theories of teaching"
+        clue:"Method, practice and theories of teaching"
     }, {
         word:"oxygen",
         clue:"Chemical element with symbol O"
@@ -184,7 +184,7 @@ const wordList = [
         clue:"Peculiar trait or behavior"
     }, {
         word:"hygiene",
-        clue:"practices conducive to maintaining health and preventing disease"
+        clue:"Practices conducive to maintaining health and preventing disease"
     }, {
         word:"geothermal",
         clue:"Relating to heat from the Earth's interior"
@@ -193,16 +193,16 @@ const wordList = [
         clue:"Study of family ancestry"
     }, {
         word:"nostalgia",
-        clue:"a sentimental longing"
+        clue:"Sentimental longing"
     }, {
         word:"enigma",
-        clue:"something mysterious or difficult to understand"
+        clue:"Something mysterious or difficult to understand"
     }, {
         word:"planet",
-        clue:"a celestial body that orbits a star"
+        clue:"A celestial body that orbits a star"
     }, {
         word:"architecture",
-        clue:"the art and science of designing and constructing buildings"
+        clue:"The art and science of designing and constructing buildings"
     },
 
 
