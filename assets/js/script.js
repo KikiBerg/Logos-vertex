@@ -2,7 +2,7 @@ const lettersDisplay = document.querySelector('.letters-display');
 const chancesText = document.querySelector('.chances-text b');
 const alphabetDiv = document.querySelector('.alphabet');
 
-let presentWord, wrongChancesCount = 0;
+let presentWord, occuringLetters = [], wrongChancesCount = 0;
 const maxChances = 5;
 
 const getRandomWord = () => {
@@ -20,19 +20,23 @@ const initGame = (button, chosenLetter) => {
         //Show the correct chosen letters
         [...presentWord].forEach((letter, index) =>{
             if(letter === chosenLetter) {
+                occuringLetters.push(letter);
                 lettersDisplay.querySelectorAll('li')[index].innerText = letter;
                 lettersDisplay.querySelectorAll('li')[index].classList.add('chosen');
             }
 
         })
     } else {
+        //Update chances-used text when choosing a letter that does not occur in the word
         wrongChancesCount++;
     }
-
-    chancesText.innerText = `${wrongChancesCount} / ${maxChances}`;
-
-
     
+    button.disabled = true; //disable an already chosen letter from being chosen again
+    chancesText.innerText = `${wrongChancesCount} / ${maxChances}`;
+    
+    //Call the end of the game when failing or winning
+    if(wrongChancesCount === maxChances) return gameOver(false);
+    if(occuringLetters.length === presentWord.length) return gameOver(true);
 
 }
 

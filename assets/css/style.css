@@ -152,9 +152,10 @@ main {
     width: calc(100% / 12 - 20px);
 }
 
-.alphabet button [disabled] {
+.alphabet button[disabled] {
+    /*mark the used letters*/
     pointer-events: none;
-    opacity: 0.6;
+    opacity: 0.4; 
 }
 
 :where(.game-pop-up, .alphabet) button:hover {
