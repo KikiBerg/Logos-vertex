@@ -1,13 +1,14 @@
 const lettersDisplay = document.querySelector('.letters-display');
+const chancesText = document.querySelector('.chances-text b');
 const alphabetDiv = document.querySelector('.alphabet');
 
-let presentWord;
+let presentWord, wrongChancesCount = 0;
+const maxChances = 5;
 
 const getRandomWord = () => {
     //Select random word and clue from wordList
     const { word, clue } = wordList [Math.floor(Math.random() * wordList.length )];
     presentWord = word;
-
     console.log(word);
     document.querySelector('.clue-text b').innerText = clue;
     lettersDisplay.innerHTML = word.split('').map(()=>`<li class="letters"></li>`).join('');
@@ -25,11 +26,13 @@ const initGame = (button, chosenLetter) => {
 
         })
     } else {
-        console.log (chosenLetter, 'Does not occur in the word');
+        wrongChancesCount++;
     }
 
+    chancesText.innerText = `${wrongChancesCount} / ${maxChances}`;
 
-    console.log(button, chosenLetter);
+
+    
 
 }
 
