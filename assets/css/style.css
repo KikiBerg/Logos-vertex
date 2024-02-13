@@ -6,16 +6,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;  
 }
 
 /*General styles*/
 body {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;  
     flex-direction: column;
     min-height: 100vh;    
-    flex-grow: 1;
+    flex-grow: 1;    
     background-color:  #fde0ba;  
     font-family: 'Poppins', sans-serif;    
 }
@@ -60,16 +61,15 @@ main {
 /* --------- Game layout */
 .container-game-area{
     display: flex;
+    width: 900px;
     flex-direction: column; /* Stack children vertically */ 
     justify-content: space-between; /* Distribute space between children */
     /*align-items: baseline;*/
     margin: 50px;
-    padding: 30px;
-    width: 900px;
+    padding: 30px;    
     gap: 40px;    
     border: solid 1px #451952;   
-    border-radius: 50px;  
-        
+    border-radius: 50px;
 }
 
 /*about the game*/
@@ -117,13 +117,14 @@ main {
     text-align: center;
     border-bottom: 2px solid #451952;
     margin-bottom: 30px;
-    color: #451952;
+    color: white;
 
 }
 
 .letters-display .letters.chosen {
     border-color: transparent;
     margin: -40px 0 20px;
+    color: #451952;
 
 }
 
@@ -156,7 +157,7 @@ main {
     opacity: 0.6;
 }
 
-:where(.game-pop-up, .alphabet) button :hover {
+:where(.game-pop-up, .alphabet) button:hover {
     background: #7e3096;
 }
 
@@ -164,7 +165,7 @@ main {
 
 .game-pop-up {
     position: fixed;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     left: 0;
@@ -179,7 +180,7 @@ main {
     max-width: 400px;
     width: 100%;
     text-align: center;    
-    padding: 10px;
+    padding: 20px;
 }
 
 
@@ -204,7 +205,6 @@ main {
     font-family: 'Poppins', sans-serif;
     text-transform: initial;
     letter-spacing: 1.5px;
-    color: #451952; 
     margin: 15px;
     font-weight: 500;
 }
@@ -215,7 +215,7 @@ main {
 }
 
 .game-pop-up button {
-    padding: 15px 30px;
+   padding: 15px;
 }
 
 
@@ -230,7 +230,7 @@ main {
 
 button {    
     border: solid 1px  #451952;    
-    color: #451952;
+  
     cursor: pointer;
     padding: 5px;
     font-size: 15px;
@@ -282,5 +282,37 @@ footer {
 }
 
 @media (max-width: 782px){ 
+    .container-game-area {        
+        flex-direction: column;
+        padding: 30px 20px;
+        align-items: center; 
+    }
+
+    .letters-display .letters {
+        margin-bottom: 25px;
+        font-size: 1.5rem;
+    }
+
+    .letters-display .letters.chosen {
+        margin: -35px 0 25px;
+    }
+
+    .game-pop-up img {
+        max-width: 120px;
+    }
+
+    .game-pop-up h4 {
+        font-size: 1.25rem;
+    }
+
+    .game-pop-up p {
+        font-size: 1.1rem;
+    }
+
+    .game-pop-up button {
+        padding: 10px 18px;
+    }
+
 
 }
+
