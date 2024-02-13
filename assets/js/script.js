@@ -23,13 +23,12 @@ const getRandomWord = () => {
     const { word, clue } = wordList [Math.floor(Math.random() * wordList.length )];
     presentWord = word;    
     document.querySelector('.clue-text b').innerText = clue;
-    restartGame();
-    
+    restartGame();    
 } 
 
 
 const gameOver = (isWin) => {
-    //Pop up window when winning or failing and respektive message poping
+    //Pop up window when winning or failing and respective message poping
     setTimeout(() => {
         const popupText = isWin ? `Awesome, you identified the word:` : `The right word was:`;
         gamePopup.querySelector('img').src = `assets/images/${isWin ? 'win' : 'tryagain'}.jpg`;
@@ -38,8 +37,6 @@ const gameOver = (isWin) => {
         gamePopup.classList.add('display');
     }, 300);
 }
-
-
 
 //Initialise the game
 const initGame = (button, chosenLetter) => {

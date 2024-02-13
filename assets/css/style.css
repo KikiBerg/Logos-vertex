@@ -1,56 +1,65 @@
 /* Google fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1 &display=swap');
 
 /*Asterisk wildcard selector to override default styles added by the browser*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;  
+    font-family: 'Poppins', sans-serif;
 }
 
 /*General styles*/
 body {
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
     flex-direction: column;
-    min-height: 100vh;    
-    flex-grow: 1;    
-    background-color:  #fde0ba;  
-    font-family: 'Poppins', sans-serif;    
+    min-height: 100vh;
+    flex-grow: 1;
+    background-color: #fde0ba;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px; /* Base font size */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
+    font-size: 1.5rem; /* 1.5 times larger than base font size */
     font-family: 'Poppins', sans-serif;
     text-transform: initial;
     letter-spacing: 1.5px;
-    color: #451952;     
+    color: #451952;
 }
+
+
 
 /*Header*/
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #FFB4B4, #FDF7C3);  
-    padding: 1rem;   
+    background: linear-gradient(45deg, #FFB4B4, #FDF7C3);
+    padding: 1rem;
     z-index: 99;
     width: 100%;
     min-height: 50px;
-    box-shadow: 0 3px 3px #451952;
-    font-size: 25px;
+    box-shadow: 0 3px 3px #451952;    
     color: #451952;
-    text-transform: initial;       
-    letter-spacing: 1.5px; 
+    text-transform: initial;
+    letter-spacing: 1.5px;
+}
+
+header h1 {
+    font-size: 3rem;
 }
 
 /*Main content*/
 
-main { 
-      
+main {
+
     /* Enable flex properties for child elements */
-    display: flex; 
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -59,31 +68,33 @@ main {
 
 
 /* --------- Game layout */
-.container-game-area{
+.container-game-area {
     display: flex;
-    width: 900px;
-    flex-direction: column; /* Stack children vertically */ 
+    width: 60vh;
+    flex-direction: column; /* Stack children vertically */
     justify-content: space-between; /* Distribute space between children */
-    /*align-items: baseline;*/
-    margin: 50px;
-    padding: 30px;    
-    gap: 40px;    
-    border: solid 1px #451952;   
+    /*align-items: center;*/
+    margin: 65px;
+    padding: 30px;
+    gap: 40px;
+    border: solid 1px #451952;
     border-radius: 50px;
 }
 
 /*about the game*/
 .about, .clue-text {
-    display: flex; 
-    flex-direction: raw; 
+    display: flex;
+    flex-direction: raw;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    font-size: 120%;
-    padding: 5px;    
-    list-style-type: none;   
+    flex-wrap: wrap;   
+    padding: 5px;
+    list-style-type: none;
     text-align: center;
-    color: #451952;
+    color: #451952;  
+    font-size: 1rem; 
+    flex-grow: 1; /* Grow elements to fill available space */
+    flex-basis: 30%; /* Minimum width for each element */
 }
 
 
@@ -104,7 +115,7 @@ main {
 .letters-display {
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
     list-style: none;
     gap: 20px;
 }
@@ -140,22 +151,22 @@ main {
 :where(.game-pop-up, .alphabet) button {
     color: white;
     font-size: 1.5rem;
-    cursor: pointer;  
+    cursor: pointer;
     padding: 2px;
     background: #451952;
     border-radius: 10px;
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
-.alphabet button {  
-    padding: 2px;  
+.alphabet button {
+    padding: 2px;
     width: calc(100% / 12 - 20px);
 }
 
 .alphabet button[disabled] {
     /*mark the used letters*/
     pointer-events: none;
-    opacity: 0.4; 
+    opacity: 0.4;
 }
 
 :where(.game-pop-up, .alphabet) button:hover {
@@ -171,7 +182,7 @@ main {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    z-index: 999;    
+    z-index: 999;
     left: 0;
     top: 0;
     width: 100%;
@@ -180,25 +191,25 @@ main {
     transition: opacity 0.4s ease;
 }
 
-.game-pop-up.display{
+.game-pop-up.display {
     opacity: 1;
-    pointer-events: auto;    
+    pointer-events: auto;
 
 }
 
-.game-pop-up .content{
+.game-pop-up .content {
     background: white;
     max-width: 400px;
     width: 100%;
-    text-align: center;    
+    text-align: center;
     padding: 20px;
 }
 
 
-.game-pop-up img {    
+.game-pop-up img {
     max-width: 300px;
-    border: solid 2px #7e3096; 
-    margin-bottom: 20px;   
+    border: solid 2px #7e3096;
+    margin-bottom: 20px;
 }
 
 .game-pop-up h4 {
@@ -206,7 +217,7 @@ main {
     font-family: 'Poppins', sans-serif;
     text-transform: initial;
     letter-spacing: 1.5px;
-    color: #451952; 
+    color: #451952;
 }
 
 .game-pop-up p {
@@ -224,22 +235,22 @@ main {
 }
 
 .game-pop-up button {
-   padding: 15px;
+    padding: 15px;
 }
 
 
-/* --------- Buttons*/
-.buttons {  
-    display: flex; 
+/* Buttons*/
+.buttons {
+    display: flex;
     flex-direction: raw;
     justify-content: space-between;
-    align-items: baseline;    
-    
+    align-items: baseline;
+
 }
 
-button {    
-    border: solid 1px  #451952;    
-  
+button {
+    border: solid 1px #451952;
+
     cursor: pointer;
     padding: 5px;
     font-size: 15px;
@@ -255,9 +266,10 @@ button {
     transform: scale(0.85);
 }
 
-.buttons #test-word, .buttons #refresh {
-    background: #FDF7C3;   
-    
+.buttons #test-word,
+.buttons #refresh {
+    background: #FDF7C3;
+
 }
 
 .buttons #test-word:hover {
@@ -273,55 +285,76 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFB4B4;  
+    background-color: #FFB4B4;
     padding: 1rem;
     width: 100%;
-    min-height: 20px;     
-    text-transform: initial;       
-    letter-spacing: 1.5px;    
+    min-height: 20px;
+    text-transform: initial;
+    letter-spacing: 1.5px;
+    
 }
 
 .madeby {
-    display: flex;    
+    display: flex;
     justify-content: center;
     text-align: center;
-    padding: 3px 0;    
+    padding: 3px 0;
     list-style-type: none;
     color: #451952;
 }
 
-@media (max-width: 782px){ 
-    .container-game-area {        
+/* --------- Media queries for various devices*/
+
+/* Adjustments for smaller devices */
+@media screen and(max-width: 768px) {
+    .container-game-area {
         flex-direction: column;
-        padding: 30px 20px;
-        align-items: center; 
+        gap: 20px;
+        width: 80%; 
+        margin: 30px;
+    }
+
+    .about,
+    .clue-text {
+        font-size: 1rem;
     }
 
     .letters-display .letters {
-        margin-bottom: 25px;
         font-size: 1.5rem;
     }
 
-    .letters-display .letters.chosen {
-        margin: -35px 0 25px;
+    .alphabet button {
+        font-size: 1rem;
+        width: calc(100% / 6 - 10px);
     }
-
-    .game-pop-up img {
-        max-width: 120px;
-    }
-
-    .game-pop-up h4 {
-        font-size: 1.25rem;
-    }
-
-    .game-pop-up p {
-        font-size: 1.1rem;
-    }
-
-    .game-pop-up button {
-        padding: 10px 18px;
-    }
-
-
 }
+
+/* Adjustments for devices larger than or equal to 1200px */
+@media screen and (min-width: 1200px) {
+    .container-game-area {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two equally sized columns */
+      grid-gap: 20px;
+      width: 80%;
+      margin: 50px auto; /* Center the container horizontally */
+    }
+
+    .about, .clue-text {
+      font-size: 1.2rem;
+    }
+  
+    .letters-display .letters {
+      font-size: 1.8rem;
+    }
+  
+    .alphabet button {
+      font-size: 1.2rem;
+    }
+    
+    .about, .clue-text, .letters-display, .alphabet, .chances-text, .buttons {
+        grid-column: 1; /* Place all elements in the first column */
+    }
+
+
+  }
 
