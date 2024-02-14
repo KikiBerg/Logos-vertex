@@ -117,12 +117,12 @@ main {
     align-items: center;
     justify-content: center;
     list-style: none;
-    gap: 20px;
+    gap: 9px;
 }
 
 .letters-display .letters {
-    width: 30px;
-    font-size: 2rem;
+    width: 18px;
+    font-size: 1.7rem;
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
@@ -159,8 +159,9 @@ main {
 }
 
 .alphabet button {
-    padding: 2px;
+    padding: 1px;
     width: calc(100% / 12 - 20px);
+    min-width: 25px;
 }
 
 .alphabet button[disabled] {
@@ -170,7 +171,7 @@ main {
 }
 
 :where(.game-pop-up, .alphabet) button:hover {
-    background: #7e3096;
+    background: #833f97;
 }
 
 /*Pop up window when winning or failing*/
@@ -239,13 +240,22 @@ main {
 }
 
 
-/* Buttons*/
+/* Buttons and chances-left text*/
+
+.chances-text {
+    display: flex;
+    flex-direction: raw;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .buttons {
     display: flex;
     flex-direction: raw;
-    justify-content: space-between;
-    align-items: baseline;
-
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 button {
@@ -265,7 +275,9 @@ button {
     transform: scale(0.85);
 }
 
-.buttons #update {
+.buttons #update {    
+    min-width: 40px;  
+    min-height: 40px;  
     background: #FDF7C3;
     text-transform: lowercase;
 }
@@ -321,15 +333,16 @@ footer {
         flex-shrink: 1;
     }
 
+    
     .alphabet {
-        /*flex-direction: column; /* Stack buttons vertically on smaller screens */
+        display: flex;
+        flex-direction: row; 
+        flex-wrap: wrap; /* Wrap the buttons onto multiple rows */
+        justify-content: space-evenly;   
+        align-content: center;            
     }
 
-    .alphabet button {
-        flex-wrap: wrap;
-        font-size: 1rem;
-        width: calc(100% / 6 - 5px);
-    }
+    
 }
 
 /* Adjustments for larger devices */
@@ -355,9 +368,17 @@ footer {
     .about, .clue-text {
       font-size: 1.2rem;
     }
+
+    .letters-display {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 13px;        
+    }
   
     .letters-display .letters {
-      font-size: 1.8rem;
+      font-size: 2.5rem;
     }
   
     .alphabet button {

@@ -2,7 +2,8 @@ const lettersDisplay = document.querySelector('.letters-display');
 const chancesText = document.querySelector('.chances-text b');
 const alphabetDiv = document.querySelector('.alphabet');
 const gamePopup = document.querySelector('.game-pop-up');
-const tryAgainBtn = document.querySelector('.try-again')
+const tryAgainBtn = document.querySelector('.try-again');
+const updateBtn = document.getElementById('update');
 
 // Initialize game vars
 let presentWord, occuringLetters, wrongChancesCount;
@@ -26,6 +27,7 @@ const getRandomWord = () => {
     restartGame();    
 } 
 
+updateBtn.addEventListener('click', getRandomWord); //Select random word by clicking update button
 
 const gameOver = (isWin) => {
     //Pop up window when winning or failing and respective message poping
