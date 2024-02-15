@@ -3,8 +3,8 @@ const wordList = [
         word: "academy",
         clue: "School founded by Plato"
     }, {
-        word: "amphitheater",
-        clue: "Round or oval theater"
+        word: "logic",
+        clue: "The principles of valid reasoning"
     }, {
         word: "antibiotic",
         clue: "Substance that destroys bacteria"
@@ -21,8 +21,8 @@ const wordList = [
         word: "barometer",
         clue: "Instrument for measuring atmospheric pressure"
     }, {
-        word: "bibliography",
-        clue: "List of books or writings"
+        word: "lethargy",
+        clue: "State of sluggishness or drowsiness"
     }, {
         word: "cosmos",
         clue: "Universe regarded as an orderly system"
@@ -138,8 +138,8 @@ const wordList = [
         word:"mentor",
         clue:"Trusted advisor or teacher"
     }, {
-        word:"hermaphrodite",
-        clue:"Organism possessing both male and female reproductive organs"
+        word:"rhapsody",
+        clue:"Epic poem or part of one suitable for recitation"
     }, {
         word:"harmony",
         clue:"Agreement or accord"
@@ -201,8 +201,38 @@ const wordList = [
         word:"planet",
         clue:"A celestial body that orbits a star"
     }, {
-        word:"architecture",
-        clue:"The art and science of designing and constructing buildings"
+        word:"hypnosis",
+        clue:"State of altered consciousness"
+    }, {
+        word:"hypotenuse",
+        clue:"Longest side of a right triangle"
+    }, {
+        word:"stigma",
+        clue:"Mark of disgrace or shame"
+    }, {
+        word:"zodiac",
+        clue:"Celestial band divided into twelve equal parts, each named after a constellation"
+    }, {
+        word:"zenith",
+        clue:"Highest point or peak"
+    }, {
+        word:"acrobat",
+        clue:"Performer skilled in gymnastics and tumbling"
+    }, {
+        word:"cinema",
+        clue:"Motion picture industry or film as an art form"
+    }, {
+        word:"ego",
+        clue:"Sense of self-esteem or self-importance"
+    }, {
+        word:"tactic",
+        clue:"Strategy for achieving a specific goal"
+    }, {
+        word:"zealot",
+        clue:"Fanatical follower of a cause or belief"
+    }, {
+        word:"",
+        clue:""
     },
 
 
