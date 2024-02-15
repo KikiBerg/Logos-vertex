@@ -11,7 +11,7 @@ Return back to the [README.md](README.md) file.
 ## CONTENTS
 
 * [AUTOMATED TESTING](#automated-testing)
-  * [W3C & JSHint Validators](#w3c&jshint-validator)
+  * [Validators](#validator)
   * [Lighthouse](#lighthouse)
   * [Responsiveness](#responsiveness)
   * [Browser Compatibility](#browser-compatibility)
