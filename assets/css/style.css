@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     flex-grow: 1;
-    background-color: #fde0ba;
+    background-color:#fae1bf;
     font-family: 'Poppins', sans-serif;
     font-size: 16px; /* Base font size */
 }
@@ -27,7 +27,7 @@ h1, h2, h3 {
     font-family: 'Poppins', sans-serif;
     text-transform: initial;
     letter-spacing: 1.5px;
-    color: #451952;
+    color: #c44739;
 }
 
 
@@ -36,19 +36,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(45deg, #FFB4B4, #FDF7C3);
+    background: linear-gradient(45deg,#79b198,#c1806a);
     padding: 1rem;
     z-index: 99;
     width: 100%;
     min-height: 50px;
-    box-shadow: 0 3px 3px #451952;    
-    color: #451952;
+    box-shadow: 0 3px 3px #79b198;    
     text-transform: initial;
     letter-spacing: 1.5px;
 }
 
 header h1 {
     font-size: 3rem;
+    text-align: center;
+    color: #fae1bf;
 }
 
 /*Main content*/
@@ -73,8 +74,9 @@ main {
     margin: 30px 30px;
     padding: 30px;
     gap: 40px;
-    border: solid 1px #451952;
+    border: solid 3px #c44739;
     border-radius: 50px;
+    background-color: #fad7a7;
 }
 
 /*about the game*/
@@ -86,8 +88,7 @@ main {
     flex-wrap: wrap;   
     padding: 5px;
     list-style-type: none;
-    text-align: center;
-    color: #451952;  
+    text-align: center;    
     font-size: 1rem; 
     flex-grow: 1; /* Grow elements to fill available space */
     flex-basis: 30%; /* Minimum width for each element */
@@ -100,10 +101,11 @@ main {
     font-size: 1.5rem;
     font-weight: 200;
     margin-bottom: 10px;
+    color: #79b198;
 }
 
 .chances-text b {
-    color: crimson;
+    color: #c44739;
 }
 
 /*The letters display*/
@@ -122,17 +124,15 @@ main {
     font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    border-bottom: 2px solid #451952;
+    border-bottom: 2px solid #c44739;
     margin-bottom: 30px;
-    color: white;
+    color: #c44739;
 
 }
 
 .letters-display .letters.chosen {
     border-color: transparent;
-    margin: -40px 0 20px;
-    color: #451952;
-
+    margin: -40px 0 20px;    
 }
 
 /*alphabet keybord*/
@@ -145,11 +145,11 @@ main {
 }
 
 :where(.game-pop-up, .alphabet) button {
-    color: white;
+    color:#fae1bf;
     font-size: 1.5rem;
     cursor: pointer;
     padding: 2px;
-    background: #451952;
+    background: #c44739;
     border-radius: 10px;
     text-transform: uppercase;
 }
@@ -167,7 +167,7 @@ main {
 }
 
 :where(.game-pop-up, .alphabet) button:hover {
-    background: #833f97;
+    background: #f57162;
 }
 
 /*Pop up window when winning or failing*/
@@ -205,7 +205,7 @@ main {
 
 .game-pop-up img {
     max-width: 300px;
-    border: solid 2px #7e3096;
+    border: solid 3px #c44739;
     margin-bottom: 20px;
 }
 
@@ -214,7 +214,7 @@ main {
     font-family: 'Poppins', sans-serif;
     text-transform: initial;
     letter-spacing: 1.5px;
-    color: #451952;
+    color: #c44739;
 }
 
 .game-pop-up p {
@@ -227,7 +227,7 @@ main {
 }
 
 .game-pop-up p b {
-    color: #451952;
+    color: #c44739;
     font-weight: 900;
 }
 
@@ -255,7 +255,7 @@ main {
 }
 
 button {
-    border: solid 1px #451952;
+    border: solid 1px #4c4852;
     cursor: pointer;
     padding: 5px;
     font-size: 15px;
@@ -274,12 +274,12 @@ button {
 .buttons #update {    
     min-width: 40px;  
     min-height: 40px;  
-    background: #FDF7C3;
+    background: #fae1bf;
     text-transform: lowercase;
 }
 
 .buttons #update:hover {
-    background: #8adf87;
+    background: #79b198;
 }
 
 /*Footer*/
@@ -287,22 +287,22 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFB4B4;
+    background: linear-gradient(45deg,#79b198,#c1806a);
     padding: 1rem;
     width: 100%;
     min-height: 20px;
-    text-transform: initial;
-    letter-spacing: 1.5px;
-    
+    text-transform: initial;      
 }
 
-.madeby {
+.madeby h3 {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 3px 0;
     list-style-type: none;
-    color: #451952;
+    color: #fae1bf;
+    font-weight: 100;
+    letter-spacing: 1px;
 }
 
 /* --------- Media queries for various devices*/
