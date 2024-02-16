@@ -144,30 +144,17 @@ Full testing was performed on the following devices:
 
 `Main Page`
 
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Jump to this page! | Link directs the user to about page | Clicked title | About page reloads | Pass |
-| Say hi on Linkedin | Link directs the user to Kiki's Linkedin profile | Clicked on button | Linkedin page appears in a new tab | Pass |
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail | Screenshot |
+| --- | --- | --- | --- | --- | --- |
+| Alphabet button | Color should change to lighter | Hover | Color changes to lighter | Pass | ![screenshot](documentation/testing/testing_lv_ft_alphabet_hover.webp) |
+| Disable an already chosen letter from being chosen again  | Color should change to lighter and letter should be locked | Choose letter | Color gets lighter and letter button is being locked | Pass | ![screenshot](documentation/testing/testing_lv_ft_alphabet_chosen.webp) |
+| Refresh button | Color should change to green | Hover | Color changes to green | Pass | ![screenshot](documentation/testing/testing_lv_ft_refresh_button.webp) |
+| Chances numbers | Chances should count upon choosing a letter  | Click | Chances start counting upon choosing a letter | Pass | ![screenshot](documentation/testing/testing_lv_ft_chances.webp) |
+| Line under letter | It should disappear when choosing the right letter | Click | It disappears | Pass | ![screenshot](documentation/testing/testing_lv_ft_refresh_lineunderletter.webp) |
+| Modal when failing| A window with a brown cat should pop up  | Click | A window with a brown cat pops up | Pass | ![screenshot](documentation/testing/testing_lv_ft_modalfail.webp) |
+| Modal when winning| A window with a cat giving hi5 should pop up  | Click | A window with a cat giving hi5 pops up  | Pass | ![screenshot](documentation/testing/testing_lv_ft_modalwin.webp) |
+| Try again button | Color should change to lighter | Hover | Color changes to lighter | Pass | ![screenshot](documentation/testing/testing_lv_ft_refresh_tryagainbtn.webp) |
 
-`Pop-up windows`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Text input | The border should get a different color when user starts typing | Type text | The border's colour changes | Pass |
-| Submit button | The colour should change to yellow | When hovering over the button | The colour changes | Pass |
-| Warning when empty | "Please fill out this field" should appear | When not filling one or more inputs | "Please fill out this field" appears | Pass |
-
-`Header, Menu pages`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Page title | The pages should get a background color and a transition effekt | Hover over | The pages get a background color and a transition effekt | Pass |
-
-`Footer`
-
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Socials | The socials should lead to the respective page in a new tap | Clicked on | The socials appear in a new tab | Pass |
 
 - - -
 
