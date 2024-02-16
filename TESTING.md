@@ -24,9 +24,8 @@ Return back to the [README.md](README.md) file.
 * [BUGS](#bugs)
 
 
-Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
-During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected.
-and were responsive on a variety of different screen sizes and devices.
+Testing was ongoing throughout the entire process of building the project. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
+I used Chrome dev tools also to make sure and check responsivity on a variety of different screen sizes and devices.
 
 - - -
 
@@ -34,27 +33,27 @@ and were responsive on a variety of different screen sizes and devices.
 
 ### W3C & JSHint Validators
 
-[W3C](https://validator.w3.org/) was used to validate the HTML and CSS on all pages of the website.
-[JSHint](https://jshint.com/) was used to validate the Javascript on all pages of the website.
+[W3C](https://validator.w3.org/) was used to validate the HTML and CSS.
+[JSHint](https://jshint.com/) was used to validate the Javascript.
 
 #### W3C HTML Validator
 
 Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Main page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkikiberg.github.io%2FLogos-vertex%2F) | ![screenshot](testing/kiki_codes_testing_w3_html_home.png) | Passed. No warnings or errors |
+| Main page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkikiberg.github.io%2FLogos-vertex%2F) | ![screenshot](documentation/testing/testing_lv_html.webp) | Passed. No warnings or errors |
 
 
 #### W3C CSS Validator
 
 File | Screenshot | Notes |
 | --- | --- | --- |
-| style.css | ![screenshot](testing/kiki_codes_testing_w3_css.png) | Passed. No errors. 1 warning for google font import style, which I ignored. |
+| style.css | ![screenshot](documentation/testing/testing_lv_css_error.webp) ![screenshot](documentation/testing/testing_lv_css_warning.webp) | 1 error for google font which I ignored. 1 warning on line 193. |
 
 #### JSHint Javascript Validator
 
 File | Screenshot | Notes |
 | --- | --- | --- |
-| style.css | ![screenshot](testing/kiki_codes_testing_w3_css.png) | Passed. No errors. 1 warning for google font import style, which I ignored. |
+| style.css | ![screenshot](documentation/testing/testing_lv_js.webp) | Warnings about: 'const', 'let in ES6', 'arrow function syntax', 'template literal syntax in ES6'. I ignored these warnings. |
 
 - - -
 
@@ -66,8 +65,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 | Page | Mobile | Desktop | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot](documentation/lighthouse-home-mobile.jpg) | ![screenshot](documentation/lighthouse-home-desktop.jpg) | Some minor warnings |
-| Game Page | ![screenshot](documentation/lighthouse-game-page-mobile.jpg) | ![screenshot](documentation/lighthouse-game-page-desktop.jpg) | Some minor warnings |
+| Main page | ![screenshot](documentation/testing/testing_lv_lighthouse_mobile.webp) | ![screenshot](documentation/testing/testing_lv_lighthouse_desktop.webp) | Some minor warnings |
 
 - - -
 
@@ -77,29 +75,22 @@ I have tested my deployed project on multiple devices to check for responsivenes
 Apart from the Chrome Devtools, I've used [this site](http://www.responsinator.com/) to quickly check responsiveness on different devices and get screenshots for the testing.md file. The screenshots for desktop are from devtools.
 
 
-`Home Page`
+`Main Page`
 
 | Mobile | Mobile landscape | Tablet | Desktop | Pass/Fail |
 | --- | --- | --- | --- | --- | 
-| ![screenshot](testing/kiki_codes_resp_home_mobile.webp)| ![screenshot](testing/kiki_codes_resp_home_mobile_land.webp) | ![screenshot](testing/kiki_codes_resp_home_tablet.webp) | ![screenshot](testing/kiki_codes_resp_home_desktop.webp) | Pass. Works as expected |
-
-`Pop-up windows`
-
-| Mobile | Mobile landscape | Tablet | Desktop | Pass/Fail |
-| --- | --- | --- | --- | --- | 
-| ![screenshot](testing/kiki_codes_resp_about_mobile.webp)| ![screenshot](testing/kiki_codes_resp_about_mobile_land.webp) | ![screenshot](testing/kiki_codes_resp_about_tablet.webp) | ![screenshot](testing/kiki_codes_resp_about_desktop.webp) | Pass. Works as expected |
-
+| ![screenshot](documentation/testing/testing_lv_resp_mobile.webp)| ![screenshot](documentation/testing/testing_lv_resp_mobile_land.webp) | ![screenshot](documentation/testing/testing_lv_resp_tablet.webp) | ![screenshot](documentation/testing/testing_lv_resp_desktop.webp) | Pass. Works as expected |
 
 - - -
 
 ### Browser Compatibility
 
-I have tested my deployed project on two different browsers to check for compatibility issues. No issues were found.
+I have tested my deployed project on two different browsers to check for compatibility issues. I could not find any issues.
 
-| Browser | Home | About | Photos | Contact | 
-| --- | --- | --- | --- | --- |
-| Chrome | ![screenshot](testing/kiki_codes_browser_chrome_home.webp) | ![screenshot](testing/kiki_codes_browser_chrome_about.webp) | ![screenshot](testing/kiki_codes_browser_chrome_contact.webp) | ![screenshot](testing/kiki_codes_browser_chrome_photos.webp)|
-| Edge | ![screenshot](testing/kiki_codes_browser_edge_home.webp) | ![screenshot](testing/kiki_codes_browser_edge_about.webp) | ![screenshot](testing/kiki_codes_browser_edge_contact.webp) | ![screenshot](testing/kiki_codes_browser_edge_photos.webp)| 
+| Browser | Main page |
+| --- | --- |
+| Chrome | ![screenshot](documentation/testing/testing_lv_resp_browser_chrome.webp) | 
+| Edge | ![screenshot](documentation/testing/testing_lv_resp_browser_edge.webp) | 
 
 - - -
 
