@@ -82,7 +82,7 @@ main {
 /*about the game*/
 .about, .clue-text {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;   
@@ -240,7 +240,7 @@ main {
 
 .chances-text {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -248,7 +248,7 @@ main {
 
 .buttons {
     display: flex;
-    flex-direction: raw;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -308,7 +308,7 @@ footer {
 /* --------- Media queries for various devices*/
 
 /* Adjustments for smaller devices */
-@media screen and(max-width: 768px) {
+@media screen and (max-width: 768px) {
     .container-game-area {
         flex-direction: column;
         display: flex;
@@ -337,7 +337,6 @@ footer {
         justify-content: space-evenly;   
         align-content: center;            
     }
-
     
 }
 

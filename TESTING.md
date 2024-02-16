@@ -1,6 +1,6 @@
 # The Logos vertex! -  Testing
 
-![The Logos vertex shown on a variety of screen sizes](documentation/kiki_codes_mockup.webp)
+![The Logos vertex shown on a variety of screen sizes](documentation/testing/lv_mockup.webp)
 
 Visit the deployed site: [The Logos vertex](https://kikiberg.github.io/Logos-vertex/)
 
@@ -11,7 +11,7 @@ Return back to the [README.md](README.md) file.
 ## CONTENTS
 
 * [AUTOMATED TESTING](#automated-testing)
-  * [Validators](#validator)
+  * [W3C & JSHint Validators](#validators)
   * [Lighthouse](#lighthouse)
   * [Responsiveness](#responsiveness)
   * [Browser Compatibility](#browser-compatibility)
@@ -26,7 +26,7 @@ Return back to the [README.md](README.md) file.
 
 Testing was ongoing throughout the entire build. I utilised Chrome developer tools whilst building to pinpoint and troubleshoot any issues as I went along.
 During development I made use of google developer tools to ensure everything was working correctly and to assist with troubleshooting when things were not working as expected.
-I have gone through each page using google chrome developer tools to ensure that each page is responsive on a variety of different screen sizes and devices.
+and were responsive on a variety of different screen sizes and devices.
 
 - - -
 
@@ -41,7 +41,7 @@ I have gone through each page using google chrome developer tools to ensure that
 
 Page | W3C URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkikiberg.github.io%2FKikicodes%2F) | ![screenshot](testing/kiki_codes_testing_w3_html_home.png) | Passed. No warnings or errors |
+| Main page | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fkikiberg.github.io%2FLogos-vertex%2F) | ![screenshot](testing/kiki_codes_testing_w3_html_home.png) | Passed. No warnings or errors |
 
 
 #### W3C CSS Validator

@@ -1,6 +1,6 @@
 # The logos vertex
 
-![The Logos vertex shown on a variety of screen sizes](documentation/kiki_codes_mockup.webp)
+![The Logos vertex shown on a variety of screen sizes](documentation/readme/lv_mockup.webp)
 
 Visit the deployed site: [The logos vertex](https://kikiberg.github.io/Logos-vertex/)
 
