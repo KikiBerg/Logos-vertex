@@ -177,6 +177,8 @@ HTML, CSS, Javascript
 
 * [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
 
+* [Color Hex](https://www.color-hex.com/) For finding inspiration about the color palettes I would use.
+
 - - -
 
 ## Deployment & Local Development
@@ -221,3 +223,28 @@ To clone the repository:
 Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 - - -
+
+## Credits
+
+### Code Used
+
+* The basic code for building the game was inspired by the following tutorial which I then adapted for my own game. - [Word Scramble Game in HTML CSS & JavaScript](https://www.codingnepalweb.com/word-scramble-game-html-javascript/) by CodingNepal.
+
+### Content
+
+* All the text content was written by myself. 
+* I got help from [chatgpt](chat.openai.com/) and [Phind ](https://www.phind.com/) to generate a list of words that are of greek origin and are often used in English.
+
+### Media
+
+* [Pexels](https://www.pexels.com/) were used for the cat images.
+
+### Acknowledgments
+
+I would like to acknowledge the following people:
+
+* Jubril Akolade - My Code Institute Mentor.
+
+* The Tutor support from Code Institute for assisting and explaining.
+
+* My fellow co-student [Efi](https://github.com/EfthymiaKakoulidou) for giving me feedback and reviewing my project.
