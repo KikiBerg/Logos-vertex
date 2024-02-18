@@ -243,8 +243,8 @@ Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
 
 I would like to acknowledge the following people:
 
-* Jubril Akolade - My Code Institute Mentor.
-
 * The Tutor support from Code Institute for assisting and explaining.
 
 * My fellow co-student [Efi](https://github.com/EfthymiaKakoulidou) for giving me feedback and reviewing my project.
+
+* Jubril Akolade - My Code Institute Mentor.
