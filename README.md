@@ -23,10 +23,7 @@ This project is my second student project.
   * [Imagery](#imagery)
   * [Wireframes](#wireframes)
   * [Features](#features)
-    * [The Home Page](#the-home-page)
-    * [The About Page](#the-about-page)
-    * [The Photos Page](#the-photos-page)
-    * [The Contact Page](#the-contact-page)
+    * [The Main Page](#the-main-page)   
     * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
@@ -146,3 +143,81 @@ I have tried during coding to ensure that the website is as accessible friendly 
 
 - - -
 
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS, Javascript
+
+### Frameworks, Libraries & Programs Used
+
+* [Font Awesome](https://fontawesome.com/) - Used for the icons.
+
+* [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+* [Github](https://github.com/) - To save and store the files for the website.
+
+* [GitPod](https://gitpod.io/) - IDE used to create the site.
+
+* [Google Fonts](https://fonts.google.com/) - To import the font used on the website.
+
+* [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [TinyPNG](https://tinypng.com/) To compress images
+
+* [Birme](https://www.birme.net/) To resize images and convert to webp format.
+
+* [Favicon.io](https://favicon.io/) To create favicon.
+
+* [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+* [Shields.io](https://shields.io/) To add static badges to the README
+
+* [Web Disability Simulator](https://chrome.google.com/webstore/detail/web-disability-simulator/olioanlbgbpmdlgjnnampnnlohigkjla) - a google chrome extension that allows you to view your site as people with accessibility needs would see it.
+
+* [Webpage Spell-Check](https://chrome.google.com/webstore/detail/webpage-spell-check/mgdhaoimpabdhmacaclbbjddhngchjik/related) - a google chrome extension that allows you to spell check your webpage. Used to check the site and the readme for spelling errors.
+
+- - -
+
+## Deployment & Local Development
+
+### Deployment
+
+The site is deployed using GitHub Pages - [Logos Vertex](https://github.com/KikiBerg/Logos-vertex).
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, [KikiBerg/Logos-vertex](https://github.com/KikiBerg/Logos-vertex).
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
+### Local Development
+
+#### How to Fork
+
+To fork the repository:
+
+1. Log in (or sign up) to Github.
+2. Go to the repository for this project, [KikiBerg/Logos-vertex](https://github.com/KikiBerg/Logos-vertex)
+3. Click the Fork button in the top right corner.
+
+#### How to Clone
+
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, [KikiBerg/Logos-vertex](https://github.com/KikiBerg/Logos-vertex)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+- - -
+
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+- - -
