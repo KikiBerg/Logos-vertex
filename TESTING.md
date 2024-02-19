@@ -16,9 +16,7 @@ Return back to the [README.md](README.md) file.
   * [Responsiveness](#responsiveness)
   * [Browser Compatibility](#browser-compatibility)
 
-* [MANUAL TESTING](#manual-testing)
-  * [Testing User Stories](#testing-user-stories)
-  * [User Testing](#user-testing)
+* [MANUAL TESTING](#manual-testing)  
   * [Full Testing](#full-testing)
 
 * [BUGS](#bugs)
@@ -102,36 +100,16 @@ I have tested my deployed project on two different browsers to check for compati
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| I want to make it interesting enough for possible future employers to see. | There is a "say hi on Linkedin" link on the Home page leading to my profile on Linkedin. |
-| I want the site to be responsive for different device sizes. | I have developed the site with responsiveness in mind. |
-| I want the site to be easy to navigate. | Clean buttons are used throughout the site for navigation, much like a mobile app. The navbar is collapsing when being used on mobile. |
+| I want the play this game both on my mobile and on my tablet. | I have developed the game with responsiveness in mind.|
+| I want the game to be easy to use and navigate.| Clean buttons are used throughout the site for navigation, much like a mobile app.|
 
 `Returning and Frequent Visitors`
 
 |  Goals | How are they achieved? |
 | :--- | :--- |
-| I want to be able to see updates (news page) about Kiki's fulfillments. | Users will be able to follow my engagement and achievements as a fullstack software developer. |
-
-- - -
-
-### User Testing
-
-A friend tested it on her iPhone 13 and provided screenshots.
-Additional testing was taken by other friends and family on a variety of devices and screen sizes. They reported no issues when using the website.
-
-`Main Page`
-
-Screenshot | Pass/Fail |
-| --- | --- |
-| ![screenshot](testing/kiki_codes_test_efi_home.webp) | Pass. Works as expected |
-
-`Pop-up windows`
-
-| Screenshot | Pass/Fail |
-| --- | --- |
-| ![screenshot](testing/kiki_codes_test_efi_about1.webp) | Pass. Works as expected |
-| ![screenshot](testing/kiki_codes_test_efi_about2.webp) | Pass. Works as expected |
-
+| I want to be able to pick difficulty level.| Users will be able to choose between 3 different levels: easy, medium, difficult |
+| I want to explore various language aspects, like words related to history, geography, politics, culture, etc.| Users will be able to choose between various knowledge areas and then related words will show up. |
+| I want to achieve high scores to track my progress.| Users will be able to save their achievements. |
 
 - - -
 
@@ -161,7 +139,5 @@ Full testing was performed on the following devices:
 
 ## BUGS
 
-The thankyou page appears correctly upon submitting the contact form.
-When validating my thankyou page, I got this bug: ![screenshot](testing/kiki_codes_bug.png).
-The answer I got from Tutor support is that I could not get any help, as it is not a language that it is not taught on the course.
+I haven't encountered any bugs that I'm aware of.
 

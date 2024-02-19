@@ -2,15 +2,10 @@
 
 ![The Logos vertex shown on a variety of screen sizes](documentation/readme/lv_mockup.webp)
 
-Visit the deployed site: [The logos vertex](https://kikiberg.github.io/Logos-vertex/)
+Visit the live deployed site: [The logos vertex](https://kikiberg.github.io/Logos-vertex/)
 
 This project is my second student project. 
 
-![GitHub repo size](https://img.shields.io/github/repo-size/KikiBerg/Kikicodes)
-![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fkikiberg.github.io%2FKikicodes%2F)
-![GitHub last commit (branch)](https://img.shields.io/github/last-commit/KikiBerg/Kikicodes/main)
-![GitHub language count](https://img.shields.io/github/languages/count/KikiBerg/Kikicodes)
-![GitHub top language](https://img.shields.io/github/languages/top/KikiBerg/Kikicodes)
 
 ## CONTENTS
 
@@ -55,13 +50,15 @@ I wanted to create a fun game that enriches the players' vocabulary and stimulat
 
 #### First Time Visitor Goals
 
-* I want to make it interesting enough for possible future users.
-* I want the game to be responsive for different device sizes.
-* I want the game to be easy to use.
+* I want the play this game both on my mobile and on my tablet.
+* I want the game to be easy to use and navigate.
+* I want to participate in an online vocabulary related game and enrich my language knowledge.
 
 #### Returning and frequent Visitor Goals
 
-* I want to be able to see updates (news page) about Kiki's fulfillments.
+* I want to be able to pick difficulty level.
+* I want to explore various language aspects, like words related to history, geography, politics, culture, etc.
+* I want to achieve high scores to track my progress.
 
 - - -
 
@@ -126,7 +123,7 @@ The main page of Logos Vertex displays the site's name as a header and then ther
 
 In future implementations I would like to:
 
-1. Add a function that shows how many points the user has collected.
+1. Add a function that shows the score of the user.
 2. Add a function that gives the easier words first and then more and more difficult words show up as the user succeeds to guess correctly.
 3. Add a function that makes it possible to refresh a word only when there's 1 chance left and not from the very beginning.
 
