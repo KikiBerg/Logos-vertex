@@ -47,7 +47,7 @@ Page | W3C URL | Screenshot | Notes |
 
 File | Screenshot | Notes |
 | --- | --- | --- |
-| style.css | ![screenshot](documentation/testing/testing_lv_css_error.webp) ![screenshot](documentation/testing/testing_lv_css_warning.webp) | 1 error for google font which I ignored. 1 warning on line 193. |
+| style.css | ![screenshot](documentation/testing/lv_validator_newcss.png) ![screenshot](documentation/testing/testing_lv_css_warning.webp) | 1 warning on line 193 which I ignored. |
 
 #### JSHint Javascript Validator
 
@@ -157,6 +157,7 @@ Full testing was performed on the following devices:
 
 
 - - -
+
 
 ## BUGS
 
