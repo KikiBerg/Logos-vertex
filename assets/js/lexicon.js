@@ -103,7 +103,7 @@ const wordList = [
         clue:"Deviating from the customary character, unconventional or odd"
     }, {
         word:"dichotomy",
-        clue:"A division or contrast between two things that are or are represented as being opposed or entirely different"
+        clue:"A split or division into two contrasting parts or ideas"
     }, {
         word:"analysis",
         clue:"The process of breaking a complex topic or substance into smaller parts to gain a better understanding"
@@ -230,10 +230,6 @@ const wordList = [
     }, {
         word:"zealot",
         clue:"Fanatical follower of a cause or belief"
-    }, {
-        word:"",
-        clue:""
-    },
-
+    }, 
 
 ];

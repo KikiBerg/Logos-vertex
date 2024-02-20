@@ -17,11 +17,11 @@ body {
     flex-grow: 1;
     background-color:#ffedd4;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px; /* Base font size */
+    font-size: 16px; 
 }
 
 h1, h2, h3 {
-    font-size: 1.5rem; /* 1.5 times larger than base font size */
+    font-size: 1.5rem; 
     font-family: 'Poppins', sans-serif;
     text-transform: initial;
     letter-spacing: 1.5px;
