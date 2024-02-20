@@ -16,7 +16,8 @@ Return back to the [README.md](README.md) file.
   * [Responsiveness](#responsiveness)
   * [Browser Compatibility](#browser-compatibility)
 
-* [MANUAL TESTING](#manual-testing)  
+* [MANUAL TESTING](#manual-testing)
+  * [Testing User Stories](#testing-user-stories)
   * [Full Testing](#full-testing)
 
 * [BUGS](#bugs)
